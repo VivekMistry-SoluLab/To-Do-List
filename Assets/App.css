@@ -1,0 +1,51 @@
+label{
+    font-weight: bold;
+    font-size: large;
+    padding: 6px;
+}
+
+input{
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+    padding: 2px;
+}
+
+
+
+section{
+    margin: 6% 25% 3% 26%; 
+}
+.card{
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.buttons{
+    border-radius: 4px;
+    margin: 5px;
+    background: crimson;
+    color: #ffffff;
+    width: 100px;
+    padding: 3px;
+}
+
+#task-list {
+    display: none;
+    list-style: none;
+    padding: 1rem;
+  }
+  
+  #task-list.visible {
+    display: block;
+  }
+  
+  #task-list li {
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
