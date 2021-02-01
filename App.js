@@ -2,6 +2,9 @@
 let addTask = document.getElementById("add-task");
 let addTaskBtn = document.getElementById("add-task-btn");
 
+
+//Add the Task
+
 addTaskBtn.addEventListener("click", () => {
     addTaskValue = addTask.value;
     let webtask = localStorage.getItem("localtask");
@@ -16,6 +19,8 @@ addTaskBtn.addEventListener("click", () => {
     showTask();
 
 })
+
+//show added task
 
 let showTask = () => {
     let webtask = localStorage.getItem("localtask");
@@ -39,8 +44,12 @@ let showTask = () => {
     addedTaskList.innerHTML = html;
 }
 
+//shows previously added task when re-launch the html file
+
 showTask();
 
+
+//Edit the task
 
 const editTask = (index) =>{
     let saveTask = document.getElementById("save-task-index");
@@ -56,6 +65,7 @@ const editTask = (index) =>{
 
 
 //save Task
+
 let saveTaskBtn = document.getElementById("save-task-btn");
 saveTaskBtn.addEventListener("click", () => {
     let addTaskBtn = document.getElementById("add-task-btn");
@@ -69,6 +79,7 @@ saveTaskBtn.addEventListener("click", () => {
     addTask.value='';
     showTask();
 })
+
 
 //Delete Item
 
